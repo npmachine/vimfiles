@@ -1,8 +1,8 @@
 set nocompatible               " be iMproved
 filetype on                    " required!
 filetype off                   " required!
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
 " Formatting
 set number " line number
@@ -12,15 +12,16 @@ set shiftwidth=2  " Tabs under smart indent
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
-Bundle 'Solarized'
-Bundle 'ruby.vim'
-Bundle 'rails.vim'
-Bundle 'rake.vim'
-Bundle 'bundler'
-Bundle 'endwise.vim'
-Bundle 'snipMate'
-Bundle 'surround.vim'
+Plugin 'gmarik/vundle'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'ruby.vim'
+Plugin 'rails.vim'
+Plugin 'rake.vim'
+Plugin 'bundler'
+Plugin 'endwise.vim'
+Plugin 'snipMate'
+Plugin 'surround.vim'
+call vundle#end()							" required!
 filetype plugin indent on     " required!
 
 " For solarized plugin (color scheme)
